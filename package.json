@@ -127,7 +127,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.0",
     "autoprefixer": "^10.4.21",
