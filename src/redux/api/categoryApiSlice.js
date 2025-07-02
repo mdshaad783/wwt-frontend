@@ -1,4 +1,3 @@
-import { updateCategory } from "../../../../backend/controllers/categoryController";
 import { CATEGORY_URL } from "../features/constants";
 import { apiSlice } from "./apiSlice";
 
