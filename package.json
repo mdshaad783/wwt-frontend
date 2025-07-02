@@ -112,7 +112,7 @@
     "source-map-js": "^1.2.1",
     "strip-json-comments": "^3.1.1",
     "supports-color": "^7.2.0",
-    "tailwind-scrollbar": "^4.0.2",
+    "tailwind-scrollbar": "^3.1.0",
     "tinyglobby": "^0.2.14",
     "type-check": "^0.4.0",
     "update-browserslist-db": "^1.1.3",
