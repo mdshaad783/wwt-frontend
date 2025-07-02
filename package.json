@@ -4,6 +4,7 @@
   "description": "",
   "main": "eslint.config.js",
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.3",
     "@reduxjs/toolkit": "^2.8.2",
     "acorn": "^8.14.1",
     "acorn-jsx": "^5.3.2",
