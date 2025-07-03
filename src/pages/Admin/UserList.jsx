@@ -4,6 +4,7 @@ import Loader from "../../components/Loader"
 import { toast } from "react-toastify"
 import { useDeleteUserMutation, useGetUsersQuery, useUpdatedUserMutation } from "../../redux/api/usersApiSlice"
 import AdminMenu from "./AdminMenu"
+import Message from "../../components/Message"
 
 
 const UserList = () => {
