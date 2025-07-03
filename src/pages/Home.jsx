@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
     const {keyword} = useParams();
-    const {data, isLoading, isError} = useGetProductsQuery({keyword})
+    const {data, isLoading, isError, error} = useGetProductsQuery({keyword})
   return (
     <>
         {!keyword ? <Header /> : null}
@@ -18,7 +18,7 @@ const Home = () => {
         <Loader />
       ) : isError ? (
         <Message variant="danger">
-          {isError?.data.message || isError.error}
+          {error?.data?.message || error?.message}
         </Message>
       ) :(
           <>
