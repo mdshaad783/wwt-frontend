@@ -53,7 +53,8 @@ const ProductList = () => {
 
 
 
-           const {data} = await createProduct(productData)
+           const data = await createProduct(productData).unwrap();
+           console.log(data)
            if(data.error){
             toast.error('Product create failed.Try again..')
             console.log(data.error)
