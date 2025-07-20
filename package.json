@@ -76,6 +76,7 @@
     "minimatch": "^3.1.2",
     "moment": "^2.30.1",
     "ms": "^2.1.3",
+    "multer": "^2.0.0",
     "nanoid": "^3.3.11",
     "natural-compare": "^1.4.0",
     "node-releases": "^2.0.19",
@@ -99,6 +100,7 @@
     "react-refresh": "^0.17.0",
     "react-router": "^7.6.1",
     "react-router-dom": "^7.6.1",
+    "react-slick": "^0.30.3",
     "react-toastify": "^11.0.5",
     "redux": "^5.0.1",
     "resolve-from": "^4.0.0",
@@ -122,9 +124,7 @@
     "which": "^2.0.2",
     "word-wrap": "^1.2.5",
     "yallist": "^3.1.1",
-    "yocto-queue": "^0.1.0",
-    "react-slick": "^0.30.3",
-    "multer": "^2.0.0"
+    "yocto-queue": "^0.1.0"
   },
   "scripts": {
     "dev": "vite",
