@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { AiOutlineHome, AiOutlineShopping, AiOutlineLogin, AiOutlineUserAdd, AiOutlineShoppingCart, AiFillShop} from 'react-icons/ai'
+import { AiOutlineHome, AiOutlineShopping, AiOutlineLogin, AiOutlineUserAdd, AiOutlineShoppingCart, AiFillShop, AiOutlineHeart} from 'react-icons/ai'
 import {FaHeart} from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import {Navigate} from 'react-router-dom'
@@ -11,6 +11,10 @@ import { logout } from '../../redux/features/auth/authSlice.js'
 import FavoritesCount from '../Products/FavoritesCount.jsx'
 import { span } from 'prelude-ls'
 import Logo from '../../svg/logo.svg';
+import {
+  Menu,
+  X,
+} from "lucide-react";
 
 const Navigation = () => {
   const {userInfo} = useSelector(state=>state.auth)
@@ -44,7 +48,7 @@ const Navigation = () => {
   return (
     <div style={{zIndex:9999}} className={`${
         showSidebar ? "hidden" : "flex"
-      } xl:flex lg:flex md:hidden sm:hidden flex-col justify-between p-4 text-gray-700 bg-gray-200 w-[4%] hover:w-[15%] h-[100vh]  fixed `}id='navigation-container'>
+      }sm:hidden xl:flex lg:flex flex-col justify-between p-4 text-gray-700 bg-gray-100 sm:hover:w-40% w-[4%] hover:w-full md:hover:w-[40%] lg:hover:w-[15%] h-[100vh] fixed `}id='navigation-container'>
 
       <div className='flex flex-col justify-center space-y-4'>
         <Link to='/' className="flex items-center transition-transform transform flex-col">
@@ -64,7 +68,7 @@ const Navigation = () => {
 
         <Link to='/cart' className='flex relative'>
         <div className="flex items-center transition-transform transform hover:translate-x-2">
-          <AiOutlineShoppingCart className='mt-[3rem] mr-2' size={26}/>
+          <AiOutlineShoppingCart className='mr-2 mt-[3rem] sm:' size={22}/>
           <span className="hidden nav-item-name mt-[3rem]">CART</span>{" "}
         </div>
         <div className="absolute top-9">
@@ -80,7 +84,7 @@ const Navigation = () => {
         </Link>
 
         <Link to='/favorite' className='flex relative transition-transform transform hover:translate-x-2'>
-          <FaHeart className="mt-[3rem] mr-2" size={20}/>
+          <AiOutlineHeart className="mt-[3rem] mr-2" size={23}/>
           <span className="hidden nav-item-name mt-[3rem]">FAVOURITE</span>{" "}
           <FavoritesCount/>
         </Link>
