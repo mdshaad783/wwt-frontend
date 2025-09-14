@@ -1,17 +1,12 @@
-import React from 'react'
 import { useState } from 'react'
-import { AiOutlineHome, AiOutlineShopping, AiOutlineLogin, AiOutlineUserAdd, AiOutlineShoppingCart, AiFillShop, AiOutlineHeart} from 'react-icons/ai'
-import {FaHeart} from 'react-icons/fa'
+import { AiOutlineHome, AiOutlineShopping, AiOutlineLogin, AiOutlineUserAdd, AiOutlineShoppingCart, AiOutlineHeart} from 'react-icons/ai'
 import { Link, useNavigate } from 'react-router-dom'
-import {Navigate} from 'react-router-dom'
 import './Navigation.css'
 import { useSelector,useDispatch } from 'react-redux'
 import { useLogoutMutation } from '../../redux/api/usersApiSlice.js'
 import { logout } from '../../redux/features/auth/authSlice.js'
 import FavoritesCount from '../Products/FavoritesCount.jsx'
-import { span } from 'prelude-ls'
 import Logo from '../../svg/logo.svg';
-
 
 const Navigation = () => {
   const {userInfo} = useSelector(state=>state.auth)
