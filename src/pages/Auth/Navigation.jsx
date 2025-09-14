@@ -11,10 +11,7 @@ import { logout } from '../../redux/features/auth/authSlice.js'
 import FavoritesCount from '../Products/FavoritesCount.jsx'
 import { span } from 'prelude-ls'
 import Logo from '../../svg/logo.svg';
-import {
-  Menu,
-  X,
-} from "lucide-react";
+
 
 const Navigation = () => {
   const {userInfo} = useSelector(state=>state.auth)
