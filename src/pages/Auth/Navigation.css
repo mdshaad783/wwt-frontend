@@ -1,8 +1,9 @@
-#navigation-container {
+/* #navigation-container {
   width: 4%;
-  transition: width 0.3s ease-in-out;
-  overflow: hidden; /* Hide overflowing content during transition */
-}
+  transition: width 0.3s ease-in-out; */
+  /* overflow: hidden; */
+   /* Hide overflowing content during transition */
+/* } */
 
 #navigation-container:hover {
   width: 15%;
@@ -33,4 +34,12 @@
 #navigation-container:hover .search-icon {
   display: none;
   transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+@media (max-width: 640px) {
+  #navigation-container{
+    width: 20%;
+  }
+  #navigation-container:hover {
+    width: 60%;
+  }
 }
