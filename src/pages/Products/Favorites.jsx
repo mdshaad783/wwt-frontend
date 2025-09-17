@@ -10,7 +10,7 @@ const Favorites = () => {
 
   return (
     <div className='px-10'>
-      <h1 className="text-lg font-bold mt-[3rem] ml-[3rem]">
+      <h1 className="font-semibold underline text-2xl mt-2 text-center">
         Favourite Products
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">
